@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Loss - Culture Circle</title>
+<style>
+  body{margin:0;padding:0;background:#f4f4f4;font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;}
+  table{border-collapse:collapse;}
+  img{display:block;border:0;outline:none;text-decoration:none;max-width:100%;height:auto;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{width:100%;background:#f4f4f4;}
+  .container{max-width:600px;margin:0 auto;background:#ffffff;}
+  .hero img{width:100%;display:block;}
+  .cart-item{text-align:center;padding:30px 20px 10px;}
+  .cart-item img{max-width:280px;width:100%;margin:0 auto 14px;display:block;}
+  .cart-item .pname{font-size:16px;font-weight:900;letter-spacing:1px;color:#000;text-transform:uppercase;margin:0;}
+  .cta-wrap{padding:28px 30px;text-align:center;}
+  .cta{display:inline-block;background:#000;color:#fff!important;padding:14px 48px;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+  .section-title{font-size:18px;font-weight:900;letter-spacing:2px;text-align:center;padding:10px 0 20px;color:#000;text-transform:uppercase;}
+  .rotation{padding:0 20px 30px;}
+  .rotation img{width:100%;}
+  .drip-title{background:#000;color:#fff;text-align:center;padding:18px;font-size:15px;font-weight:900;letter-spacing:2px;text-transform:uppercase;}
+  .cat{padding:20px;}
+  .cat td{padding:6px;vertical-align:top;}
+  .cat img{width:100%;}
+  .culture{text-align:center;padding:30px 20px 10px;}
+  .culture .small{font-size:13px;color:#555;}
+  .culture .big{font-size:16px;font-weight:900;letter-spacing:1px;color:#000;margin-top:4px;text-transform:uppercase;}
+  .review{margin:16px 20px;border:1px solid #eee;border-radius:10px;padding:14px;background:#fafafa;}
+  .review .top{font-size:14px;color:#22a745;letter-spacing:2px;}
+  .review .name{float:right;font-size:12px;color:#444;font-weight:700;}
+  .review h3{font-size:15px;margin:6px 0 6px;color:#000;}
+  .review p{font-size:12px;color:#555;margin:0;line-height:1.45;}
+  .prompt{text-align:center;font-size:12px;color:#666;padding:10px 20px 16px;}
+  .footer{text-align:center;padding:24px 20px;background:#fff;}
+  .footer p{font-size:13px;color:#000;margin:0 0 12px;font-weight:700;}
+  .stores img{display:inline-block;height:40px;margin:0 4px;}
+  .social{padding:16px 0 6px;}
+  .social a{display:inline-block;margin:0 8px;}
+  .social img{width:28px;height:28px;display:inline-block;}
+  .unsub{font-size:11px;color:#999;padding:10px 0 20px;}
+  .unsub a{color:#d00;text-decoration:underline;}
+</style>
+</head>
+<body>
+<table class="wrap" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+  <tr><td align="center">
+    <table class="container" role="presentation" width="600" cellpadding="0" cellspacing="0">
+
+      <!-- HERO -->
+      <tr><td class="hero">
+        <img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/hero-6.jpg" alt="Your Loss - Culture Circle">
+      </td></tr>
+
+      <!-- CART ITEM (personalised) -->
+      <tr><td class="cart-item">
+        <img src='{{event["custom"]["add_to_cart"]["custom"]["image"]}}' alt='{{event["custom"]["add_to_cart"]["custom"]["product_name"]}}'>
+        <p class="pname">{{event["custom"]["add_to_cart"]["custom"]["product_name"]}}</p>
+      </td></tr>
+
+      <!-- CTA -->
+      <tr><td class="cta-wrap">
+        <a href="#" class="cta">&raquo;&nbsp;SHOP THE DROP&nbsp;&laquo;</a>
+      </td></tr>
+
+      <!-- ROTATION REFRESH -->
+      <tr><td class="section-title">ROTATION REFRESH</td></tr>
+      <tr><td>
+        <table class="cat" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="50%"><a href="https://www.culture-circle.com/products/all/casio-g842-gmw-b5000d-1dr-g-shock"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/watch-1-casio-gshock-metal.png" alt="Casio G-Shock Full Metal GMW-B5000D"></a></td>
+            <td width="50%"><a href="https://www.culture-circle.com/products/all/casio-edifice-chronograph-efb-730d-7av-quartz-silver-dial-stainless-steel-watch"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/watch-2-casio-edifice.png" alt="Casio Edifice Silver Chronograph"></a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.culture-circle.com/category/watches"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/watch-3-rado-diastar.jpg" alt="Rado DiaStar Silver"></a></td>
+            <td><a href="https://www.culture-circle.com/category/watches"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/watch-4-guess-rosegold.png" alt="Guess Rose Gold"></a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.culture-circle.com/category/watches"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/watch-5-bulgari-serpenti.jpg" alt="Bulgari Serpenti Tubogas"></a></td>
+            <td><a href="https://www.culture-circle.com/category/watches"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/watch-6-louis-erard-blue.jpg" alt="Louis Erard Excellence Blue"></a></td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <!-- DRIP -->
+      <tr><td class="drip-title">EXPERIENCE YOUR BEST DRIP WITH</td></tr>
+      <tr><td>
+        <table class="cat" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="50%"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000002699.png" alt="Sneakers"></td>
+            <td width="50%"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000003039.png" alt="Apparel"></td>
+          </tr>
+          <tr>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000002699-2.png" alt="Handbags"></td>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000003039-3.png" alt="Perfumes"></td>
+          </tr>
+          <tr>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000002699-3.png" alt="Watches"></td>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000003039-4.png" alt="Beauty"></td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <!-- CULTURE -->
+      <tr><td class="culture">
+        <div class="small">You're not just our customer,</div>
+        <div class="big">YOU'RE PART OF THE CULTURE NOW.</div>
+      </td></tr>
+
+      <!-- REVIEWS -->
+      <tr><td>
+        <div class="review">
+          <span class="top">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="name">- Raj Mehta</span>
+          <h3>Yeezy 350 V2</h3>
+          <p>Culture Circle delivered my Yeezys faster than expected and the packaging was fire!!!</p>
+        </div>
+        <div class="review">
+          <span class="top">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="name">- Vikram Patel</span>
+          <h3>Jordan 4</h3>
+          <p>Best prices I've found anywhere. Their price match is real. The kicks are stunning.</p>
+        </div>
+        <div class="review">
+          <span class="top">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="name">- Ananya Singh</span>
+          <h3>Adidas NMDs</h3>
+          <p>I Ordered my first NMD pair and it arrived quicker than expected the authentication process is next level!</p>
+        </div>
+      </td></tr>
+
+      <tr><td class="prompt">You can write about your experience, we always want to get better</td></tr>
+
+      <tr><td class="cta-wrap">
+        <a href="#" class="cta">&raquo;&nbsp;DROP YOUR REVIEWS HERE&nbsp;&laquo;</a>
+      </td></tr>
+
+      <!-- FOOTER -->
+      <tr><td class="footer">
+        <p>Download Culture Circle App</p>
+        <div class="stores">
+          <a href="#"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/google-play.png" alt="Google Play"></a>
+          <a href="#"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/app-store.png" alt="App Store"></a>
+        </div>
+        <div class="social">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+        </div>
+        <div class="unsub"><a href="#">Click Here</a> to unsubscribe</div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>
