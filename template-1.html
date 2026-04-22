@@ -12,6 +12,9 @@
   .wrap{width:100%;background:#f4f4f4;}
   .container{max-width:600px;margin:0 auto;background:#ffffff;}
   .hero img{width:100%;display:block;}
+  .cart-item{text-align:center;padding:30px 20px 10px;}
+  .cart-item img{max-width:280px;width:100%;margin:0 auto 14px;display:block;}
+  .cart-item .pname{font-size:16px;font-weight:900;letter-spacing:1px;color:#000;text-transform:uppercase;margin:0;}
   .cta-wrap{padding:28px 30px;text-align:center;}
   .cta{display:inline-block;background:#000;color:#fff!important;padding:14px 48px;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
   .section-title{font-size:18px;font-weight:900;letter-spacing:2px;text-align:center;padding:10px 0 20px;color:#000;text-transform:uppercase;}
@@ -48,6 +51,12 @@
       <!-- HERO -->
       <tr><td class="hero">
         <img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Group%2016.jpg" alt="Don't Stay Uncultured - Culture Circle">
+      </td></tr>
+
+      <!-- CART ITEM (personalised) -->
+      <tr><td class="cart-item">
+        <img src="{{event[&quot;custom&quot;][&quot;add_to_cart&quot;][&quot;custom&quot;][&quot;image&quot;]}}" alt="{{event[&quot;custom&quot;][&quot;add_to_cart&quot;][&quot;custom&quot;][&quot;product_name&quot;]}}">
+        <p class="pname">{{event["custom"]["add_to_cart"]["custom"]["product_name"]}}</p>
       </td></tr>
 
       <!-- CTA -->
