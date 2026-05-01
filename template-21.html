@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Order Delivered - Culture Circle</title>
+<style>
+  body{margin:0;padding:0;background:#f4f4f4;font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;}
+  table{border-collapse:collapse;}
+  img{display:block;border:0;outline:none;text-decoration:none;max-width:100%;height:auto;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{width:100%;background:#f4f4f4;}
+  .container{max-width:600px;margin:0 auto;background:#ffffff;}
+  .hero img{width:100%;display:block;}
+  .order-item{text-align:center;padding:36px 20px 28px;background:#ffffff;}
+  .order-item img.product{max-width:260px;width:100%;margin:0 auto 14px;display:block;}
+  .order-item .pname{font-size:16px;font-weight:900;letter-spacing:1px;color:#000;text-transform:uppercase;margin:0;}
+  .cta-wrap{padding:8px 30px 36px;text-align:center;background:#fff;}
+  .cta{display:inline-block;background:#000;color:#fff!important;padding:14px 36px;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+  .drip-banner img{width:100%;display:block;}
+  .cat{padding:20px;}
+  .cat td{padding:6px;vertical-align:top;}
+  .cat img{width:100%;}
+  .footer{text-align:center;padding:24px 20px;background:#fff;}
+  .footer p{font-size:13px;color:#000;margin:0 0 12px;font-weight:700;}
+  .stores img{display:inline-block;height:40px;margin:0 4px;}
+  .social{padding:16px 0 6px;}
+  .social a{display:inline-block;margin:0 8px;}
+  .social img{width:28px;height:28px;display:inline-block;}
+  .unsub{font-size:11px;color:#999;padding:10px 0 20px;}
+  .unsub a{color:#1a73e8;text-decoration:underline;}
+</style>
+</head>
+<body>
+<table class="wrap" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+  <tr><td align="center">
+    <table class="container" role="presentation" width="600" cellpadding="0" cellspacing="0">
+
+      <!-- HERO: ORDER DELIVERED -->
+      <tr><td class="hero">
+        <img src="https://cdn.culture-circle.com/media/Screenshot_2026-05-01_at_7.42.21PM.png" alt="Order Delivered - Culture Circle">
+      </td></tr>
+
+      <!-- ORDER ITEM (personalised) -->
+      <tr><td class="order-item">
+        <img class="product" src='{{event["custom"]["order_delivered"]["custom"]["image"]}}' alt='{{event["custom"]["order_delivered"]["custom"]["product_name"]}}'>
+        <p class="pname">{{event["custom"]["order_delivered"]["custom"]["product_name"]}}</p>
+      </td></tr>
+
+      <!-- CTA: VIEW INVOICE -->
+      <tr><td class="cta-wrap">
+        <a href="#" class="cta">&raquo;&nbsp;CLICK HERE TO VIEW YOUR INVOICE&nbsp;&laquo;</a>
+      </td></tr>
+
+      <!-- DRIP BANNER -->
+      <tr><td class="drip-banner">
+        <img src="https://cdn.culture-circle.com/media/Screenshot_2026-05-01_at_7.24.14PM.png" alt="Experience Your Best Drip">
+      </td></tr>
+
+      <!-- DRIP CATEGORIES -->
+      <tr><td>
+        <table class="cat" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="50%"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000002699.png" alt="Sneakers"></td>
+            <td width="50%"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000003039.png" alt="Apparel"></td>
+          </tr>
+          <tr>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000002699-2.png" alt="Handbags"></td>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000003039-3.png" alt="Perfumes"></td>
+          </tr>
+          <tr>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000002699-3.png" alt="Watches"></td>
+            <td><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/Frame%201000003039-4.png" alt="Beauty"></td>
+          </tr>
+        </table>
+      </td></tr>
+
+      <!-- FOOTER -->
+      <tr><td class="footer">
+        <p>Download Culture Circle App</p>
+        <div class="stores">
+          <a href="#"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/google-play.png" alt="Google Play"></a>
+          <a href="#"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/app-store.png" alt="App Store"></a>
+        </div>
+        <div class="social">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+        </div>
+        <div class="unsub"><a href="#">Click Here</a> to unsubscribe</div>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>
