@@ -46,6 +46,14 @@
         <img class="product" src='{{event["custom"]["order_delivered"]["custom"]["image"]}}' alt='{{event["custom"]["order_delivered"]["custom"]["product_name"]}}'>
         <p class="pname">{{event["custom"]["order_delivered"]["custom"]["product_name"]}}</p>
       </td></tr>
+      <!-- SHIPPING ADDRESS -->
+      <tr><td style="background:#ffffff;padding:0 30px 32px;text-align:center;">
+        <p style="font-size:12px;color:#000;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin:0 0 8px;">Shipping Address</p>
+        <p style="font-size:12px;color:#999999;line-height:1.7;margin:0;">
+          {{event["custom"]["checkout_completed"]["custom"]["address"]}},<br>
+          {{event["custom"]["checkout_completed"]["custom"]["pincode"]}}, {{event["custom"]["checkout_completed"]["custom"]["city"]}}, {{event["custom"]["checkout_completed"]["custom"]["state"]}}
+        </p>
+      </td></tr>
 
       <!-- CTA: VIEW INVOICE -->
       <tr><td class="cta-wrap">
