@@ -13,15 +13,12 @@
   .container{max-width:600px;margin:0 auto;background:#ffffff;}
   .logo-row{padding:0;background:#fff;}
   .logo-row img{width:100%;display:block;}
-  .headline{text-align:center;padding:14px 30px 6px;background:#fff;}
+  .headline{text-align:center;padding:18px 30px 6px;background:#fff;}
   .headline h1{font-size:30px;font-weight:900;letter-spacing:1px;color:#000;text-transform:uppercase;margin:0;line-height:1.15;}
-  .body-copy{padding:22px 36px 8px;text-align:center;background:#fff;}
+  .body-copy{padding:22px 36px 30px;text-align:center;background:#fff;}
   .body-copy p{font-size:14px;color:#444;line-height:1.7;margin:0 0 14px;}
+  .body-copy p:last-child{margin-bottom:0;}
   .body-copy .greet{font-size:15px;font-weight:700;color:#000;letter-spacing:0.5px;}
-  .order-item{text-align:center;padding:8px 20px 30px;background:#fff;}
-  .order-item .cancelled{display:inline-block;font-size:10px;color:#d22;font-weight:900;letter-spacing:3px;text-transform:uppercase;margin:0 0 14px;border:1px solid #d22;padding:4px 10px;}
-  .order-item img.product{max-width:200px;width:100%;margin:0 auto 12px;display:block;opacity:0.85;}
-  .order-item .pname{font-size:13px;font-weight:700;letter-spacing:1px;color:#666;text-transform:uppercase;margin:0;text-decoration:line-through;}
   .gift-wrap{padding:0 30px 8px;background:#fff;}
   .gift-card{background:#0a1714;color:#fff;text-align:center;padding:34px 24px 36px;border-radius:6px;}
   .gift-card .label{font-size:11px;color:#7af0c4;letter-spacing:4px;text-transform:uppercase;margin:0 0 10px;font-weight:700;}
@@ -53,15 +50,10 @@
       <!-- BODY COPY -->
       <tr><td class="body-copy">
         <p class="greet">Hey {{user["first_name"]}},</p>
-        <p>A technical glitch on our end caused some product prices to display incorrectly &mdash; in some cases as low as <b>&#8377;10</b>. To keep things fair for the entire community, we had to cancel your order.</p>
-        <p>We know this isn&rsquo;t the experience you came here for, and we&rsquo;re genuinely sorry for the inconvenience.</p>
-      </td></tr>
-
-      <!-- CANCELLED ORDER (personalised) -->
-      <tr><td class="order-item">
-        <span class="cancelled">Cancelled</span><br>
-        <img class="product" src='{{event["custom"]["order_cancelled"]["custom"]["image"]}}' alt='{{event["custom"]["order_cancelled"]["custom"]["name"]}}'>
-        <p class="pname">{{event["custom"]["order_cancelled"]["custom"]["name"]}}</p>
+        <p>Due to a technical issue on our end, some products were mistakenly listed at incorrect prices, in a few cases as low as <b>&#8377;10</b>.</p>
+        <p>We know this might&rsquo;ve been exciting, and cancelling your order isn&rsquo;t the experience we want you to have.</p>
+        <p>To keep things fair for everyone, we had to cancel these orders.</p>
+        <p>Really sorry for the inconvenience. We appreciate your understanding.</p>
       </td></tr>
 
       <!-- GIFT CARD -->
@@ -82,7 +74,7 @@
       <!-- SIGNOFF -->
       <tr><td class="signoff">
         <p>Thanks for sticking with us.</p>
-        <p class="team">&mdash; Team Culture Circle</p>
+        <p class="team">Team Culture Circle</p>
       </td></tr>
 
       <!-- FOOTER (matched-badge image from design spec) -->
