@@ -13,6 +13,8 @@
   .container{max-width:600px;margin:0 auto;background:#ffffff;}
   .hero img{width:100%;display:block;}
   .order-item{text-align:center;padding:36px 20px 28px;background:#ffffff;}
+  .order-item .arrival{font-size:13px;color:#000;letter-spacing:1.5px;text-transform:uppercase;margin:0 0 22px;font-weight:600;}
+  .order-item .arrival b{font-weight:900;color:#0f9b6c;}
   .order-item img.product{max-width:260px;width:100%;margin:0 auto 14px;display:block;}
   .order-item .pname{font-size:16px;font-weight:900;letter-spacing:1px;color:#000;text-transform:uppercase;margin:0;}
   .cta-wrap{padding:8px 30px 36px;text-align:center;background:#fff;}
@@ -43,8 +45,9 @@
 
       <!-- ORDER ITEM (personalised) -->
       <tr><td class="order-item">
-        <img class="product" src='{{event["custom"]["order_delivered"]["custom"]["image"]}}' alt='{{event["custom"]["order_delivered"]["custom"]["product_name"]}}'>
-        <p class="pname">{{event["custom"]["order_delivered"]["custom"]["product_name"]}}</p>
+        <p class="arrival">Your order has been <b>delivered</b></p>
+        <img class="product" src='{{event["custom"]["checkout_completed"]["custom"]["image"]}}' alt='{{event["custom"]["checkout_completed"]["custom"]["name"]}}'>
+        <p class="pname">{{event["custom"]["checkout_completed"]["custom"]["name"]}}</p>
       </td></tr>
       <!-- SHIPPING ADDRESS -->
       <tr><td style="background:#ffffff;padding:0 30px 32px;text-align:center;">
