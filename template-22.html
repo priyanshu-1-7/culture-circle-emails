@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>We owe you an apology | Culture Circle</title>
+<style>
+  body{margin:0;padding:0;background:#f4f4f4;font-family:Arial,Helvetica,sans-serif;-webkit-text-size-adjust:100%;}
+  table{border-collapse:collapse;}
+  img{display:block;border:0;outline:none;text-decoration:none;max-width:100%;height:auto;}
+  a{text-decoration:none;color:inherit;}
+  .wrap{width:100%;background:#f4f4f4;}
+  .container{max-width:600px;margin:0 auto;background:#ffffff;}
+  .logo-row{text-align:center;padding:38px 20px 18px;background:#fff;}
+  .logo-row p{font-family:'Arial Black',Arial,Helvetica,sans-serif;font-weight:900;font-size:34px;letter-spacing:1px;color:#000;margin:0;text-transform:uppercase;}
+  .headline{text-align:center;padding:14px 30px 6px;background:#fff;}
+  .headline h1{font-size:30px;font-weight:900;letter-spacing:1px;color:#000;text-transform:uppercase;margin:0;line-height:1.15;}
+  .body-copy{padding:22px 36px 8px;text-align:center;background:#fff;}
+  .body-copy p{font-size:14px;color:#444;line-height:1.7;margin:0 0 14px;}
+  .body-copy .greet{font-size:15px;font-weight:700;color:#000;letter-spacing:0.5px;}
+  .order-item{text-align:center;padding:8px 20px 30px;background:#fff;}
+  .order-item .cancelled{display:inline-block;font-size:10px;color:#d22;font-weight:900;letter-spacing:3px;text-transform:uppercase;margin:0 0 14px;border:1px solid #d22;padding:4px 10px;}
+  .order-item img.product{max-width:200px;width:100%;margin:0 auto 12px;display:block;opacity:0.85;}
+  .order-item .pname{font-size:13px;font-weight:700;letter-spacing:1px;color:#666;text-transform:uppercase;margin:0;text-decoration:line-through;}
+  .gift-wrap{padding:0 30px 8px;background:#fff;}
+  .gift-card{background:#0a1714;color:#fff;text-align:center;padding:34px 24px 36px;border-radius:6px;}
+  .gift-card .label{font-size:11px;color:#7af0c4;letter-spacing:4px;text-transform:uppercase;margin:0 0 10px;font-weight:700;}
+  .gift-card .code{font-family:'Courier New',Courier,monospace;font-size:26px;font-weight:900;letter-spacing:2px;color:#fff;background:rgba(122,240,196,0.08);border:1px dashed #7af0c4;padding:14px 18px;display:inline-block;margin:0 0 18px;}
+  .gift-card .amount{font-size:22px;color:#7af0c4;font-weight:900;letter-spacing:1px;margin:0 0 4px;text-transform:uppercase;}
+  .gift-card .min{font-size:12px;color:#9ba8a3;margin:0;}
+  .cta-wrap{padding:30px 30px 24px;text-align:center;background:#fff;}
+  .cta{display:inline-block;background:#000;color:#fff!important;padding:14px 44px;font-size:14px;font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+  .signoff{padding:6px 30px 36px;text-align:center;background:#fff;}
+  .signoff p{font-size:13px;color:#666;line-height:1.7;margin:0 0 4px;}
+  .signoff .team{font-weight:700;color:#000;}
+</style>
+</head>
+<body>
+<table class="wrap" role="presentation" width="100%" cellpadding="0" cellspacing="0">
+  <tr><td align="center">
+    <table class="container" role="presentation" width="600" cellpadding="0" cellspacing="0">
+
+      <!-- LOGO -->
+      <tr><td class="logo-row">
+        <a href="https://www.culture-circle.com"><p>CULTURE CIRCLE</p></a>
+      </td></tr>
+
+      <!-- HEADLINE -->
+      <tr><td class="headline">
+        <h1>We owe you<br>an apology.</h1>
+      </td></tr>
+
+      <!-- BODY COPY -->
+      <tr><td class="body-copy">
+        <p class="greet">Hey {{user["first_name"]}},</p>
+        <p>A technical glitch on our end caused some product prices to display incorrectly &mdash; in some cases as low as <b>&#8377;10</b>. To keep things fair for the entire community, we had to cancel your order.</p>
+        <p>We know this isn&rsquo;t the experience you came here for, and we&rsquo;re genuinely sorry for the inconvenience.</p>
+      </td></tr>
+
+      <!-- CANCELLED ORDER (personalised) -->
+      <tr><td class="order-item">
+        <span class="cancelled">Cancelled</span><br>
+        <img class="product" src='{{event["custom"]["order_cancelled"]["custom"]["image"]}}' alt='{{event["custom"]["order_cancelled"]["custom"]["name"]}}'>
+        <p class="pname">{{event["custom"]["order_cancelled"]["custom"]["name"]}}</p>
+      </td></tr>
+
+      <!-- GIFT CARD -->
+      <tr><td class="gift-wrap">
+        <div class="gift-card">
+          <p class="label">A gift on us</p>
+          <p class="code">TECHGRATITUDE500</p>
+          <p class="amount">&#8377;500 OFF</p>
+          <p class="min">on a minimum order of &#8377;10,000</p>
+        </div>
+      </td></tr>
+
+      <!-- CTA -->
+      <tr><td class="cta-wrap">
+        <a href="https://www.culture-circle.com" class="cta">&raquo;&nbsp;SHOP CULTURE CIRCLE&nbsp;&laquo;</a>
+      </td></tr>
+
+      <!-- SIGNOFF -->
+      <tr><td class="signoff">
+        <p>Thanks for sticking with us.</p>
+        <p class="team">&mdash; Team Culture Circle</p>
+      </td></tr>
+
+      <!-- FOOTER (matched-badge image from design spec) -->
+      <tr><td style="padding:0;background:#f4f4f4;">
+        <a href="https://www.culture-circle.com"><img src="https://raw.githubusercontent.com/priyanshu-1-7/culture-circle-emails/main/assests/cc-now-footer.png" alt="Download Culture Circle App" style="width:100%;display:block;"></a>
+      </td></tr>
+      <tr><td style="text-align:center;background:#f4f4f4;padding:6px 0 18px;">
+        <a href="#" style="font-size:11px;color:#1a73e8;text-decoration:underline;">Unsubscribe</a>
+      </td></tr>
+
+    </table>
+  </td></tr>
+</table>
+</body>
+</html>
